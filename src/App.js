@@ -24,6 +24,8 @@ function App() {
   }
   const logout = () => {
     auth.signOut();
+    setSuccess(false);
+    setExists(false);
   }
   const [title, setTitle] = useState('');
   const [content, setContent] = useState('');
